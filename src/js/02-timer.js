@@ -20,7 +20,10 @@ const options = {
             window.alert("Please choose a date in the future");
             startBtn.setAttribute('disabled', 'disabled');
         };
+        return;
     },
 };
 
 flatpickr('#datetime-picker', options);
+
+function onStartClick() {};
