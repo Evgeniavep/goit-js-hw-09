@@ -70,7 +70,6 @@ const timer = () => {
     }
 };
 
-
 function onStartClick() {
     startBtn.setAttribute('disabled', 'disabled');
     interval = setInterval(timer, 1000);
