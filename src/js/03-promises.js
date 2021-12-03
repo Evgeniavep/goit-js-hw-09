@@ -6,11 +6,13 @@ form.addEventListener('submit', formSubmit);
 function formSubmit(event) {
     event.preventDefault();
 
-    const { elements: { delay, step, amount } } = event.currentTarget;
+    const {
+        elements: { delay, step, amount },
+    } = event.currentTarget;
 
-    let delayData = delay.value;
-    let stepData = step.value;
-    let amountData = amount.value;
+    let delayData = Number(delay.value);
+    let stepData = Number(step.value);
+    let amountData = Number(amount.value);
 
     let position = 1;
     for (
