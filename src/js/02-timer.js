@@ -67,7 +67,8 @@ const timer = () => {
     secondsLeft.textContent = addLeadingZero(timerData.seconds);
     if (timeLeft <= 500) {
         clearInterval(interval);
-    }
+    };
+    console.log('timeLeft', timeLeft);
 };
 
 function onStartClick() {
